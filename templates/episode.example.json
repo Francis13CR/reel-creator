@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "video": {
+    "id": "2026-01-01-example",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 55,
+    "tail_s": 1,
+    "voice": "audio/voice.wav",
+    "music": "audio/music.wav"
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "beat_id": "b1",
+      "order": 1,
+      "type": "hook",
+      "text": {
+        "title": "THE DECISION",
+        "subtitle": "That changed everything"
+      },
+      "assets": []
+    },
+    {
+      "id": "s2",
+      "beat_id": "b2",
+      "order": 1,
+      "type": "map",
+      "text": {
+        "title": "WHERE IT HAPPENED"
+      },
+      "assets": [
+        { "type": "map", "src": "assets/map.svg" }
+      ]
+    },
+    {
+      "id": "s3",
+      "beat_id": "b3",
+      "order": 1,
+      "type": "data",
+      "visual": "dot-matrix",
+      "anchor_start": { "word": "left", "occurrence": 1, "edge": "start" },
+      "text": {
+        "title": "2,500–3,500",
+        "body": "estimated victims"
+      },
+      "assets": []
+    },
+    {
+      "id": "s4",
+      "beat_id": "b4",
+      "order": 1,
+      "type": "outro",
+      "text": {
+        "title": "WHAT WOULD YOU DO?",
+        "body": "Tell me in the comments."
+      },
+      "assets": []
+    }
+  ]
+}

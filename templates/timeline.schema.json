@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reel Creator timeline",
+  "type": "object",
+  "required": ["version", "duration_s", "beats", "scenes"],
+  "properties": {
+    "version": { "const": 1 },
+    "duration_s": { "type": "number", "minimum": 15 },
+    "beats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "start_s", "end_s", "words"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^b[0-9]+$" },
+          "start_s": { "type": "number", "minimum": 0 },
+          "end_s": { "type": "number", "minimum": 0 },
+          "audio": { "type": "string" },
+          "words": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["text", "start_s", "end_s"],
+              "properties": {
+                "text": { "type": "string" },
+                "start_s": { "type": "number", "minimum": 0 },
+                "end_s": { "type": "number", "minimum": 0 }
+              }
+            }
+          }
+        }
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "beat_id", "order", "start_s", "end_s"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^s[0-9]+$" },
+          "beat_id": { "type": "string", "pattern": "^b[0-9]+$" },
+          "order": { "type": "integer", "minimum": 1 },
+          "start_s": { "type": "number", "minimum": 0 },
+          "end_s": { "type": "number", "minimum": 0 }
+        }
+      }
+    }
+  }
+}

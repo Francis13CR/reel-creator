@@ -1,0 +1,33 @@
+{
+  "brand": "Your Brand",
+  "colors": {
+    "bg": "#0B0B0B",
+    "text": "#F2E8D5",
+    "accent": "#E5482F",
+    "muted": "#8B8678",
+    "secondary": "#2E5EAA"
+  },
+  "fonts": {
+    "display": "Anton",
+    "body": "Archivo",
+    "mono": "IBM Plex Mono"
+  },
+  "safe": {
+    "top": 120,
+    "bottom": 320,
+    "sides": 72,
+    "captionsBottom": 400
+  },
+  "voice": {
+    "provider": "google",
+    "language": "es-US",
+    "name": "es-US-Wavenet-B",
+    "speakingRate": 1.12
+  },
+  "style": {
+    "displayCase": "uppercase",
+    "trackingLongTitles": 2,
+    "durationTargetS": 60,
+    "tailS": 1
+  }
+}
